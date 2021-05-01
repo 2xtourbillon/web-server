@@ -4,11 +4,11 @@ print(__name__)
 
 @app.route('/')
 def my_home():
-    return render_template('index.html')
+    return render_template('./templates/index.html')
 
 @app.route('/about')
 def about():
-    return render_template('about.html')
+    return render_template('./templates/about.html')
 
 @app.route('/blog')
 def blog():
